@@ -198,7 +198,7 @@ loadSettings = function(defaultSettings) {
   var settings = localStorage.getItem("settings") ? JSON.parse(localStorage.getItem("settings")) : defaultSettings;
 
   // It only takes 5 minutes
-  if (window.location.hostname !== "thomasedoff.github.io" && settings.apiKey.includes("eUdRM0JjQXB4cDIxc0wxcWlhRjFrNTdaWG9NY")) {
+  if (window.location.hostname !== "thomas4f.github.io" && settings.apiKey.includes("eUdRM0JjQXB4cDIxc0wxcWlhRjFrNTdaWG9NY")) {
     alert("Create your own API key for Västtrafik's API: https://developer.vasttrafik.se/portal/#/guides/get-started");
     throw new Error("Create your own API key for Västtrafik's API: https://developer.vasttrafik.se/portal/#/guides/get-started");
   }
